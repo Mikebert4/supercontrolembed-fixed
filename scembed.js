@@ -580,5 +580,5 @@ setInterval(function(){
             superControlCalendarWidgetManualBootstrap();
         }
     }
-}, 1000);
+}, 333);
 });
