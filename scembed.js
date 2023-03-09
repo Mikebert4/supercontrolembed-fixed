@@ -4,6 +4,7 @@ var superControlCalendarWidgetManualBootstrap;
 
 window.addEventListener("load", function() {
 
+
 (superControlCalendarWidgetManualBootstrap = function(){
 
     if(window.location.hash === '#calendarPopup'){
@@ -580,5 +581,5 @@ setInterval(function(){
             superControlCalendarWidgetManualBootstrap();
         }
     }
-}, 333);
+}, 400);
 });
