@@ -208,7 +208,7 @@ window.addEventListener("load", function() {
     var calendarPopupFrame = document.createElement('iframe');
     calendarPopupFrame.id = "supercontrolCalendarPopup";
     calendarPopupFrame.src = iframesUrl + '&popup=true';
-    calendarPopupFrame.scrolling = "yes";
+    calendarPopupFrame.overflowY = "scroll";
     calendarPopupFrame.style.border = "none";
     if(isIos){
         calendarPopupFrame.style.position = "relative";
@@ -270,12 +270,9 @@ window.addEventListener("load", function() {
         }
         
         calendarPopupFrame.style.display = "block";
-        if(isIos){
-            calendarPopupContainer.style.display = "block";
-            document.body.style.overflow = "scroll";
-        }else{
-            document.body.style.overflow = "hidden";
-        }
+        calendarPopupContainer.style.display = "block";
+        document.body.style.overflow = "scroll";
+        
         setTimeout(function(){
             calendarPopupFrame.style.opacity = "1";
             if(isIos){
