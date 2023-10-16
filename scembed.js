@@ -571,7 +571,8 @@ window.addEventListener("load", function() {
     }
 });
 superControlCalendarWidgetManualBootstrap();
-setInterval(function(){ 
+setInterval(function(){
+    console.log("test");
     const widgetSelector = document.querySelectorAll('[data-calendar-key]');
     if(widgetSelector.length > 0){
         if(widgetSelector[0].childNodes[0]){
