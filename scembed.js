@@ -272,7 +272,7 @@ window.addEventListener("load", function() {
         calendarPopupFrame.style.display = "block";
         calendarPopupContainer.style.display = "block";
         document.body.style.overflow = "scroll";
-        
+
         setTimeout(function(){
             calendarPopupFrame.style.opacity = "1";
             if(isIos){
@@ -496,7 +496,7 @@ window.addEventListener("load", function() {
                 url += '&affc=' + getCookie('Affc');
                 url += "&popup=true";
                 calendarPopupFrame.src = url;
-            },500)
+            },1000)
         }
         catch(e){
             url += "_ga=undefined";
@@ -582,5 +582,5 @@ setInterval(function(){
             superControlCalendarWidgetManualBootstrap();
         }
     }
-}, 500);
+}, 1000);
 });
