@@ -153,7 +153,7 @@ window.addEventListener("load", function() {
         pickerFrame.id = (c.targetId || 'supercontrolCalendar')+"Widget"+i;
         pickerFrame.src = iframesUrl;
 
-        pickerFrame.scrolling = "no";
+        pickerFrame.setAttribute("scrolling","yes");
         pickerFrame.style.width = "100%";
         pickerFrame.style.border = "none";
         if(c.calendarSize){
@@ -208,7 +208,7 @@ window.addEventListener("load", function() {
     var calendarPopupFrame = document.createElement('iframe');
     calendarPopupFrame.id = "supercontrolCalendarPopup";
     calendarPopupFrame.src = iframesUrl + '&popup=true';
-    calendarPopupFrame.scrolling = "yes";
+    calendarPopupFrame.setAttribute("scrolling","yes");
     calendarPopupFrame.style.border = "none";
     if(isIos){
         calendarPopupFrame.style.position = "relative";
